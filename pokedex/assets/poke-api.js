@@ -12,6 +12,9 @@ function convertPokeAPIDetailToPokemonClass(pokeDetail) {
   pokemon.type = type;
 
   pokemon.photo = pokeDetail.sprites.other.dream_world.front_default;
+  pokemon.height = pokeDetail.height;
+  pokemon.stats = pokeDetail.stats[0].base_stat;
+  pokemon.effort = pokeDetail.stats[0].effort;
 
   return pokemon;
 }

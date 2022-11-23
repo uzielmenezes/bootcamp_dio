@@ -131,6 +131,21 @@
     height: 70px;
 }
 
+.moreDetails h1 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.moreDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.species {
+    padding: .1rem 0;
+}
+
 .pagination {
     display: flex;
     justify-content: center;

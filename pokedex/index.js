@@ -24,6 +24,12 @@ function loadPokemonItems(offset, limit) {
               alt="${pokemon.name}"
             />
         </div>
+        <div class="moreDetails">
+            <h1>Details</h1>      
+            <span class="species">Height: ${pokemon.height}</span>
+            <span class="species">Stats: ${pokemon.stats}</span>
+            <span class="species">Effort: ${pokemon.effort}</span>
+        </div>
      </li>
  `
       )
