@@ -24,7 +24,7 @@
     background-color: #678FEE;
 }
 
-.eletric {
+.electric {
     background-color: #F7CF2E;
 }
 
@@ -129,6 +129,25 @@
     align-self: flex-end;
     max-width: 100%;
     height: 70px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+#loadMore {
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    background-color: #6C79DB;
+    border: none;
+    border-radius: 1rem;
+    color: #FFF;
+    
 }
 
 /* responsive design */
