@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 1.5rem;
+    width: 60rem;
+    border-bottom: .04rem solid;
+}
+.content {
+    margin-bottom: 1rem;
+}
+
+.image {
+    margin-right: 2rem;
+}
+
+.image > img {
+    width: 25rem;
+    min-width: 25rem;
+}
+
+.title {
+    align-self: center;
+    text-align: center;
+}
