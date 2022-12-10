@@ -1,0 +1,32 @@
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cover > img {
+    width: 35vw;
+    height: 35vh;
+    min-width: 35vw;
+    border-radius: .5rem;
+}
+
+.content > a {
+    margin-top: .5rem;
+    font-size: .8rem;
+}
+
+.title {
+    margin-top: 1rem;
+}
+
+.description {
+    margin-top: 1rem;
+}
+
+.description > p {
+    color: #808080;
+}
