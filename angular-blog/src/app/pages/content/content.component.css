@@ -7,6 +7,10 @@
     height: 100vh;
 }
 
+.cover {
+    margin: 3rem 0;
+}
+
 .cover > img {
     width: 35vw;
     height: 35vh;
@@ -15,18 +19,18 @@
 }
 
 .content > a {
-    margin-top: .5rem;
     font-size: .8rem;
 }
 
 .title {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .description {
-    margin-top: 1rem;
+    margin: 2rem 5rem;
 }
 
 .description > p {
     color: #808080;
+    text-align: justify;
 }
