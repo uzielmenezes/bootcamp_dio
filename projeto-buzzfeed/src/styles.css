@@ -11,3 +11,7 @@ body {
     background-color: #1f1147;
     font-family: 'Segoes UI';
 }
+
+h3 {
+    font-size: 2rem;
+}
