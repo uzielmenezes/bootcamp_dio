@@ -36,13 +36,13 @@ export class QuizComponent implements OnInit {
     }
   }
 
-  playerChoice(value: string) {
+  playerChoice(value: string): void {
     this.answers.push(value);
     console.log(this.answers);
     this.nextStep();
   }
 
-  nextStep() {
+  nextStep(): void {
     this.questionIndex += 1;
     if (this.questionMaxIndex > this.questionIndex) {
       this.questionSelected = this.questions[this.questionIndex];
@@ -52,15 +52,16 @@ export class QuizComponent implements OnInit {
     this.result();
   }
 
-  result() {
+  result(): void {
     if (this.finished) {
-      let villain = this.answers.filter((x) => x === 'A').length;
-      let hero = this.answers.filter((x) => x === 'B').length;
+      let villain = this.answers.filter((alias) => alias === 'A').length;
+      let hero = this.answers.filter((alias) => alias === 'B').length;
       if (villain > hero) {
-        this.response = quiz_questions.results.A;
+        this.response = quiz_questions.results['A'];
       } else {
-        this.response = quiz_questions.results.B;
+        this.response = quiz_questions.results['B'];
       }
+      console.log('O seu resultado é: ', this.response);
     }
   }
 }
