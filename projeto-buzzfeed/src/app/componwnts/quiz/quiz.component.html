@@ -17,6 +17,9 @@
   </div>
   <div *ngIf="finished" class="quiz results">
     <h1>O seu resultado é:</h1>
-    <p>{{ response }}</p>
+    <p>{{ answerSelected }}</p>
+  </div>
+  <div *ngIf="finished" (click)="returnQuiz()" class="quiz back">
+    <button class="btn-option back">Voltar</button>
   </div>
 </div>

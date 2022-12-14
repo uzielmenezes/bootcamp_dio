@@ -21,8 +21,6 @@ export class QuizComponent implements OnInit {
 
   finished: boolean = false;
 
-  response: string = '';
-
   constructor() {}
 
   ngOnInit(): void {
@@ -57,11 +55,18 @@ export class QuizComponent implements OnInit {
       let villain = this.answers.filter((alias) => alias === 'A').length;
       let hero = this.answers.filter((alias) => alias === 'B').length;
       if (villain > hero) {
-        this.response = quiz_questions.results['A'];
+        this.answerSelected = quiz_questions.results['A'];
       } else {
-        this.response = quiz_questions.results['B'];
+        this.answerSelected = quiz_questions.results['B'];
       }
-      console.log('O seu resultado é: ', this.response);
+      console.log('O seu resultado é: ', this.answerSelected);
     }
+  }
+
+  returnQuiz() {
+    this.finished = false;
+    this.answers = [];
+    this.questionIndex = 0;
+    this.questionSelected = this.questions[this.questionIndex];
   }
 }
